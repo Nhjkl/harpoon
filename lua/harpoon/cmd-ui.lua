@@ -35,6 +35,7 @@ local function create_window()
     local Harpoon_cmd_win_id, win = popup.create(bufnr, {
         title = "Harpoon Commands",
         highlight = "HarpoonWindow",
+        borderhighlight = 'HarpoonBorder',
         line = math.floor(((vim.o.lines - height) / 2) - 1),
         col = math.floor((vim.o.columns - width) / 2),
         minwidth = width,
