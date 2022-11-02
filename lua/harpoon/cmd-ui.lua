@@ -141,7 +141,7 @@ end
 
 function M.select_menu_item()
     log.trace("cmd-ui#select_menu_item()")
-    local cmd = vim.fn.line(".")
+    local cmd = vim.fn.getline(".")
     close_menu(true)
     if vim.g.select_menu_item_callback then
       vim.g.select_menu_item_callback(cmd)
